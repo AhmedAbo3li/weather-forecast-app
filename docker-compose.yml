@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - RAPIDAPI_KEY=5155a4e3femsh0e87fda176ad8fep1d1b64jsn61bfab5367a8
+      - RAPIDAPI_HOST=weatherapi-com.p.rapidapi.com
+    restart: always
